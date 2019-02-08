@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="icon" type="image/ico" href="img/icono2.ico"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	
+   <header>
+      
+	        <div id="logotipo">
+	          <div class="logo"></div>
+	          <div class="logo2"></div>
+	        </div>
+	      
+	        <nav class="menu">
+	          <div class="intmenu">
+
+	           <!--  <div class="edic-ant">
+		            	 <div class="dds">Cómo funciona</div>
+		            	 <div class="submenu">
+		            	 	<div class="subint arriba" id="f"><p>Profesionales</p></div>
+		            	 	<div class="subint abajo" id="v"><p>Usuarios</p></div>
+		            	 </div>    .
+		        </div> -->
+
+		       <!--  <div class="opciones">
+		        	 <div class="titulodrop"><h1>Cómo funciona</h1></div>
+		        	 <div class="fueradespl">
+			        	 	<div class="despliegue">
+			        	 	   <div class="p" id="p"><p>Profesionales</p></div>
+			        	 	   <div class="u" id="u"><p>Usuarios</p></div>
+			        	    </div>
+		        	 </div>
+		        </div> -->
+
+	            <a href="index.html" class="hvr-underline-from-center" id="">Inicio</a>
+	            <!-- <a href="search.html" class="hvr-underline-from-center" id="">Buscar un Profesional</a>
+	            <a href="#" class="hvr-underline-from-center" id="">Acceso profesionales</a> -->
+
+	          </div>
+	     
+	         
+	          <label id="button-menu" for="menu-bar"></label>
+	      
+	        </nav>
+	        
+	        <div class="menu-despleg">
+	          <nav class="menu2">
+	            <div class="intmenud">
+	                                  
+	                <!-- <div class="opciones">
+			        	 <div class="titulodrop minimo"><h1>Cómo funciona</h1></div>
+			        	 <div class="fueradespl">
+				        	 	<div class="despliegue">
+				        	 	   <div class="pp"><p>Profesionales</p></div>
+				        	 	   <div class="uu"><p>Usuarios</p></div>
+				        	    </div>
+			        	 </div>
+		             </div> -->
+
+
+	            <a href="index.html" class="hvr-underline-from-center" id="">Inicio</a>
+	            <!-- <a href="search.html" class="hvr-underline-from-center" id="">Buscar un Profesional</a>
+	            <a href="#" class="hvr-underline-from-center" id="">Acceso profesionales</a> -->
+	            </div>
+	          </nav>
+	        </div>
+	        <!--<div class="navidad"></div>-->
+      </header>
+      <div class="flecha"></div>
+
+
+      
+      <div class="titulo-registro">
+      	<h1>Registro para Usuarios</h1>
+      </div>
+
+       <div class="container">
+		  
+		  <form class="form-horizontal" action="/registrop.php" method="POST">
+			   <div class="encuadre"> 
+                  <h1>Registro de usuario</h1>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="email"  >E-mail:</label>
+				      <div class="col-sm-10">
+				        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+				      <div class="col-sm-10">          
+				        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+				      </div>
+				    </div>
+				    <div class="form-group">        
+				      <div class="col-sm-offset-2 col-sm-10">
+				        <div class="checkbox">
+				          <label><input type="checkbox" name="remember">Recordarme</label>
+				        </div>
+				      </div>
+				    </div>
+
+              </div>
+
+              <div class="encuadre"> 
+                  <h1>Perfil Personal</h1>
+
+				    
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="apellido">Apellido:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">Telefono:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="telefono">
+				      </div>
+				    </div>
+   			     
+                    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">Ubicación:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="ubicacion" placeholder="Ubicación" name="ubicación">
+				      </div>
+				    </div>
+
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">Su situación:</label>
+				      <div class="col-sm-10">
+				         <textarea class="form-control" rows="5" name="situacion" placeholder="Su mensaje" id="comment"></textarea><br>
+				    </div>
+				    
+              
+              
+
+                <div class="form-group">        
+			      <div class="col-xs-offset-3 col-sm-offset-3 col-sm-10">
+			        <button type="submit" class="btn btn-default botonresgistro">Completar Registro</button>
+			      </div>
+			    </div> 
+              </div>
+
+              </div>
+
+			    
+		  </form>
+        </div>
+
+
+
+
+
+
+
+
+   <footer>
+   	   <div class="contlogoblanco">
+   	    <div class="logoblanco"></div>
+       </div>
+   	   <div class="menufooter">
+   	   	<br>
+   	   	     <a href="index.html">Inicio</a>
+   	   	     
+
+   	   </div>
+
+   	   <div class="siguenos">
+   	   	    <p>Síguenos</p>
+   	   	    <a href="#" class="facebook"></a>
+   	   </div>
+
+   	   <div class="marca"><p>Divan © 2018</p></div>
+
+   </footer>
+
+     
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/javascpt.js"></script>
+
+</body>
+</html>

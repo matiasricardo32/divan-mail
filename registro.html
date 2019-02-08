@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Registro</title>
+	<link rel="icon" type="image/ico" href="img/icono2.ico"/>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/animate.css">
+</head>
+<body>
+	
+   <header>
+      
+	        <div id="logotipo">
+	          <div class="logo"></div>
+	          <div class="logo2"></div>
+	        </div>
+	      
+	        <nav class="menu">
+	          <div class="intmenu">
+
+	           <!--  <div class="edic-ant">
+		            	 <div class="dds">Cómo funciona</div>
+		            	 <div class="submenu">
+		            	 	<div class="subint arriba" id="f"><p>Profesionales</p></div>
+		            	 	<div class="subint abajo" id="v"><p>Usuarios</p></div>
+		            	 </div>    .
+		        </div> -->
+
+		       <!--  <div class="opciones">
+		        	 <div class="titulodrop"><h1>Cómo funciona</h1></div>
+		        	 <div class="fueradespl">
+			        	 	<div class="despliegue">
+			        	 	   <div class="p" id="p"><p>Profesionales</p></div>
+			        	 	   <div class="u" id="u"><p>Usuarios</p></div>
+			        	    </div>
+		        	 </div>
+		        </div> -->
+
+	            <a href="index.html" class="hvr-underline-from-center" id="">Inicio</a>
+	            <!-- <a href="search.html" class="hvr-underline-from-center" id="">Buscar un Profesional</a>
+	            <a href="#" class="hvr-underline-from-center" id="">Acceso profesionales</a> -->
+
+	          </div>
+	     
+	         
+	          <label id="button-menu" for="menu-bar"></label>
+	      
+	        </nav>
+	        
+	        <div class="menu-despleg">
+	          <nav class="menu2">
+	            <div class="intmenud">
+	                                  
+	                <!-- <div class="opciones">
+			        	 <div class="titulodrop minimo"><h1>Cómo funciona</h1></div>
+			        	 <div class="fueradespl">
+				        	 	<div class="despliegue">
+				        	 	   <div class="pp"><p>Profesionales</p></div>
+				        	 	   <div class="uu"><p>Usuarios</p></div>
+				        	    </div>
+			        	 </div>
+		             </div> -->
+
+
+	            <a href="index.html" class="hvr-underline-from-center" id="">Inicio</a>
+	            <!-- <a href="search.html" class="hvr-underline-from-center" id="">Buscar un Profesional</a>
+	            <a href="#" class="hvr-underline-from-center" id="">Acceso profesionales</a> -->
+	            </div>
+	          </nav>
+	        </div>
+	        <!--<div class="navidad"></div>-->
+      </header>
+      <div class="flecha"></div>
+
+
+      
+      <div class="titulo-registro">
+      	<h1>Registro para profesionales</h1>
+      </div>
+
+       <div class="container">
+		  
+		  <form class="form-horizontal" enctype="multipart/form-data" action="./registro.php" method="POST">
+			   <div class="encuadre"> 
+                  <h1>Registro de usuario</h1>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="email">E mail:</label>
+				      <div class="col-sm-10">
+				        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="pwd">Contraseña:</label>
+				      <div class="col-sm-10">          
+				        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
+				      </div>
+				    </div>
+				    <div class="form-group">        
+				      <div class="col-sm-offset-2 col-sm-10">
+				        <div class="checkbox">
+				          <label><input type="checkbox" value="remember" name="remember">Recordarme</label>
+				        </div>
+				      </div>
+				    </div>
+
+              </div>
+
+              <div class="encuadre"> 
+                  <h1>Perfil Personal</h1>
+
+				     <div class="form-group">
+				     	
+				     	<label class="control-label col-sm-2" for="pwd">Título:</label>
+			            <div class="col-sm-10"> 
+
+                           <div class="radio-inline">
+						      <label><input type="radio" name="titulo" value="Licenciado/a"  checked>Lic.</label>
+						   </div>
+						   <div class="radio-inline">
+						      <label><input type="radio" name="titulo" value="Doctor" >Dr.</label>
+					       </div>
+					       <div class="radio-inline">
+						      <label><input type="radio" name="titulo" value="Doctora" >Dra.</label>
+					       </div>
+					       <div class="radio-inline">
+						      <label><input type="radio" name="titulo" value="Ninguno" >Ninguno</label>
+					       </div>
+
+			            </div>
+				     </div>
+
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="apellido">Apellido:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="apellido" placeholder="Apellido" name="apellido">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">Telefono:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="telefono" placeholder="Telefono" name="telefono">
+				      </div>
+				    </div>
+   			        <div class="form-group">
+				      <label class="control-label col-sm-2" for="imagen">Imagen de Perfil:</label>
+				      <div class="col-sm-10">
+				        <input type="file" name="imgPerfil" accept="image/jpg, image/jpeg" aria-invalid="false">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">CUIL/CUIT:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="cuil" placeholder="CUIL/CUIT" name="cuil">
+				      </div>
+				    </div>
+				    <div class="form-group">
+				     	
+				     	<label class="control-label col-sm-2" for="pwd">Sexo:</label>
+			            <div class="col-sm-10"> 
+
+                           <div class="radio-inline">
+						      <label><input type="radio" name="sexo" value="Masculino"  checked>Masculino</label>
+						   </div>
+						   <div class="radio-inline">
+						      <label><input type="radio" name="sexo" value="Femenino" >Femenino</label>
+					       </div>
+					      
+
+			            </div>
+				     </div>
+				    <div class="form-group">
+				     	
+					     	<label class="control-label col-sm-2" for="pwd">Zonas de atención:</label>
+				            <div class="col-sm-10"> 
+
+	                             <div class="checkbox">
+								    <label><input type="checkbox" name="zonaCaba" value="CABA">CABA</label>
+								    </div>
+								    <div class="checkbox">
+								      <label><input type="checkbox" name="zonaGbaN" value="GBA Zona Norte">GBA Zona Norte</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox" name="zonaGbaO" value="GBA Zona Oeste">GBA Zona Oeste</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox" name="zonaCord" value="Provincia Cordoba">Prov. Córdoba</label>
+								    </div>
+						      
+
+				            </div>
+				    </div>
+				    <div class="form-group">
+				     	
+					     	<label class="control-label col-sm-2" for="pwd">Tratamientos a domicilio:</label>
+				            <div class="col-sm-10"> 
+
+	                           <div class="radio-inline">
+							      <label><input type="radio" name="tratamientoDom" value="Si"  checked>Sí</label>
+							   </div>
+							   <div class="radio-inline">
+							      <label><input type="radio" name="tratamientoDom" value="No" >No</label>
+						       </div>
+						      
+
+				            </div>
+				    </div>
+                    <div class="form-group">
+				      <label class="control-label col-sm-2" for="telefono">Ubicación:</label>
+				      <div class="col-sm-10">
+				        <input type="text" class="form-control" id="ubicacion" placeholder="Ubicación" name="ubicacion">
+				      </div>
+				    </div>
+				    
+              </div>
+              
+              <div class="encuadre">
+              	   <h1>Datos Profesionales</h1>
+
+                   <div class="form-group">
+				      <label class="control-label col-sm-2" for="pwd">Profesión:</label>
+				      <div class="col-sm-10">          
+				       
+				         <select class="form-control" id="sel1" name="profesion" >
+					        <option value="Psicologo" >Psicólogo</option>
+					        <option value="Psiquiatra" >Psiquiatra</option>
+					        <option value="Psicopedagogo" >Psicopedagogo</option>
+					        <option value="Musicoterapeuta" >Musicoterapeuta</option>
+					     </select>
+				      </div>
+				    </div>
+
+				   <div class="form-group">
+				      <label class="control-label col-sm-2" for="imagen">Profesional certificado (opcional):</label>
+				      <div class="col-sm-10">
+				        <input type="file" name="imgCertificado" accept="image/jpg, image/jpeg" aria-invalid="false">
+				      </div>
+				   </div>
+                   <div class="form-group">
+				     	
+					     	<label class="control-label col-sm-2" for="pwd">Tipo de Terapia:</label>
+				            <div class="col-sm-10"> 
+
+	                             <div class="checkbox">
+								    <label><input type="checkbox" value="Psicodrama" name="tipoPsicodrama" >Psicodrama</label>
+								    </div>
+								    <div class="checkbox">
+								      <label><input type="checkbox" value="Terapia-Cognitiva" name="tipoCognitiva" >Terapia cognitiva</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox" value="Psicologia-Positiva" name="tipoPositiva" >Psicología Positiva</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox" value="Terapia-Humanista" name="tipoHumanista" >Terapia Humanista</label>
+								    </div>
+						           <hr>
+
+				            </div>
+				    </div>
+
+				     <div class="form-group">
+				     	
+					     	<label class="control-label col-sm-2" for="pwd">Dirigido A:</label>
+				            <div class="col-sm-10"> 
+
+	                             <div class="checkbox">
+								    <label><input type="checkbox"  name="dirigidoAdolescentes" value="Adolescentes">Adolescentes</label>
+								    </div>
+								    <div class="checkbox">
+								      <label><input type="checkbox"  name="dirigidoAdultos" value="Adultos">Adultos</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox"  name="dirigidoFamiliar" value="Familiar">Familiar</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox"  name="dirigidoMayores" value="Mayores">Mayores</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox"  name="dirigidoNiños" value="Niños">Niños</label>
+								    </div>
+								    <div class="checkbox ">
+								      <label><input type="checkbox"  name="dirigidoPareja" value="Pareja">Pareja</label>
+								    </div>
+						           <hr>
+
+				            </div>
+				    </div>
+				     <div class="form-group">
+				     	
+					     	<label class="control-label col-sm-2" for="pwd">Modalidad de Terapia:</label>
+				            <div class="col-sm-10"> 
+
+	                             <div class="checkbox">
+								    <label><input type="checkbox" name="modalidadGrupal" value="Grupal">Grupal</label>
+								    </div>
+								    <div class="checkbox">
+								      <label><input type="checkbox" name="modalidadIndividual" value="Individual">Individual</label>
+								    </div>
+								    
+						           <hr>
+
+				            </div>
+				    </div>
+
+                <div class="form-group">        
+			      <div class="col-sm-offset-2 col-sm-10">
+			        <button type="submit" class="btn btn-default botonresgistro">Completar Registro</button>
+			      </div>
+			    </div> 
+
+              </div>
+
+			    
+		  </form>
+        </div>
+
+
+
+
+
+
+
+
+   <footer>
+   	   <div class="contlogoblanco">
+   	    <div class="logoblanco"></div>
+       </div>
+   	   <div class="menufooter">
+   	   	     	<br>
+   	   	     <a href="index.html">Inicio</a>
+
+   	   </div>
+
+   	   <div class="siguenos">
+   	   	    <p>Síguenos</p>
+   	   	    <a href="#" class="facebook"></a>
+   	   </div>
+
+   	   <div class="marca"><p>Divan © 2018</p></div>
+
+   </footer>
+
+     
+
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<script src="js/javascpt.js"></script>
+
+</body>
+</html>
