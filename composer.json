@@ -1,0 +1,12 @@
+{
+    "name": "matiasricardo/divan",
+    "authors": [
+        {
+            "name": "MatiasRicardo",
+            "email": "ricardomatias.deb@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "~6.0"
+    }
+}
