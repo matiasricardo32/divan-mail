@@ -1,8 +1,10 @@
 <?php
 
 
-    
+    use PHPMailer\PHPMailer\PHPMailer;
+    use PHPMailer\PHPMailer\Exception;
 
+    
         header('Content-type: application/json; charset=utf-8');
 
         if( isset($_POST['nombre'])  && isset( $_POST['email'])   && ($_POST['nombre'] != "")&& ($_POST['email'] != "") ) {
