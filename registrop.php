@@ -7,10 +7,12 @@
  */
 
 
-use PHPMailer\PHPMailer\PHPMailer;
+ use PHPMailer\PHPMailer\PHPMailer;
 
-require './vendor/autoload.php';
-
+ require 'phpmailer/src/Exception.php';
+ require 'phpmailer/src/PHPMailer.php';
+ require 'phpmailer/src/SMTP.php';
+ 
 // Campos de inputs
 $email = $_POST['email'];
 $constraseña = $_POST['password'];
@@ -23,6 +25,19 @@ $situacion = $_POST['situacion'];
 
 // Mailer
 $mail = new PHPMailer;
+$mail->isSMTP();
+$mail->SMTPDebug  = 2;
+$mail->Host = 'ricardomatias.deb@gmail.com';
+$mail->Username = 'ricardomatias.deb@gmail.com';                 
+$mail->Password = '441324as';
+$mail->SMTPSecure = 'tls';                              
+$mail->Port = 587;
+$mail->SMTPAuth = true;
+$mail->SMTPOptions = array('ssl' => 
+        array('verify_peer' => false, 
+        'verify_peer_name' => false,
+        'allow_self_signed' => true));
+
 $mail->setFrom('ricardomatias.deb@gmail.com', 'Ricardo');
 $mail->addAddress('matias.ricardo.m@gmail.com');
 $mail->Subject  = 'First PHPMailer Message';
