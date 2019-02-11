@@ -8,11 +8,8 @@
 
 
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
-require 'path/to/PHPMailer/src/Exception.php';
-require 'path/to/PHPMailer/src/PHPMailer.php';
-require 'path/to/PHPMailer/src/SMTP.php';
 
+require './vendor/autoload.php';
 
 // Campos de inputs
 $email = $_POST['email'];
@@ -25,28 +22,17 @@ $situacion = $_POST['situacion'];
 
 
 // Mailer
-$mail = new PHPMailer();
-$body = " El Paciente Registrado es... \n
-        Nombre y apellido: $nombre, $apellido. \n
-        Telefono: $telefono. \n
-        Ubicacion: $ubicacion. \n
-        Situacion: $situacion. \n
-        Email: $email. \n
-        Contraseña: $contraseña. \n";
-$mail->SetFrom($email, 'Ricardo Mascareño');
-$mail->AddReplyTo('ricardomatias.deb@gmail.com', 'Ricardo Mascareño');
-$address = 'matias.ricardo.m@gmail.com';
-$mail->AddAddress($address, 'Rick matias');
-//$mail->Subject("Registro Paciente DIVAN");
-//$mail­->CharSet("UTF­8");
-//$mail-­>Encoding("quoted­printable");
-
-if(!mail>Send()) {
-    echo 'Error al Enviar mensaje: ' . $mail>ErrorInfo;
+$mail = new PHPMailer;
+$mail->setFrom('ricardomatias.deb@gmail.com', 'Ricardo');
+$mail->addAddress('matias.ricardo.m@gmail.com');
+$mail->Subject  = 'First PHPMailer Message';
+$mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
+if(!$mail->send()) {
+    echo 'Message was not sent.';
+    echo 'Mailer error: ' . $mail->ErrorInfo;
 } else {
-    echo " Hola, Su mensaje ah sido enviado";
+    echo 'Message has been sent.';
 }
-
 
 
 
